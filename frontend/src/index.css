@@ -13,9 +13,20 @@ body {
 }
 
 .glass-panel {
-  @apply bg-storm-800/70 backdrop-blur-md border border-slate-700/60 rounded-2xl shadow-glow-cyan;
+  @apply rounded-2xl border border-slate-300/80 bg-white/80 shadow-xl backdrop-blur-md dark:border-slate-700/60 dark:bg-storm-800/70 dark:shadow-glow-cyan;
 }
 
-/* Leaflet default styles */
-@import 'leaflet/dist/leaflet.css';
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #0b1220;
+}
+
+.leaflet-container img,
+.leaflet-pane img,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  max-width: none !important;
+}
 

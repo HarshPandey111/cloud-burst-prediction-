@@ -12,7 +12,7 @@ import About from './pages/About';
 
 export default function App() {
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-slate-50 via-slate-100 to-slate-200 dark:from-storm-900 dark:via-storm-900 dark:to-slate-900">
+    <div className="flex min-h-screen flex-col bg-gradient-to-b from-slate-100 via-slate-100 to-slate-300 dark:from-storm-900 dark:via-storm-900 dark:to-slate-900">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

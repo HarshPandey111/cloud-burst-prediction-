@@ -35,7 +35,7 @@ export default function Navbar() {
             <div className="text-sm font-semibold tracking-wide text-cyanglow">
               Cloud Burst
             </div>
-            <div className="text-xs text-slate-300">Prediction &amp; Risk Analysis</div>
+            <div className="text-xs text-slate-600 dark:text-slate-300">Prediction &amp; Risk Analysis</div>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
               to={item.to}
               className={({ isActive }) =>
                 `text-sm font-medium transition-colors ${
-                  isActive ? 'text-cyanglow' : 'text-slate-300 hover:text-white'
+                  isActive ? 'text-cyanglow' : 'text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'
                 }`
               }
             >

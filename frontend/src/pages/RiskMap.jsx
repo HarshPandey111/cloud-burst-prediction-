@@ -171,6 +171,7 @@ export default function RiskMap() {
           center={center}
           zoom={zoom}
           scrollWheelZoom
+          whenReady={(event) => event.target.invalidateSize()}
           className="h-full w-full"
         >
           <TileLayer
@@ -183,8 +184,8 @@ export default function RiskMap() {
               center={[p.lat, p.lon]}
               radius={4 + p.weight * 6}
               pathOptions={{
-                color: riskColor(points[idx]?.risk_level),
-                fillColor: riskColor(points[idx]?.risk_level),
+                color: riskColor(filteredPoints[idx]?.risk_level),
+                fillColor: riskColor(filteredPoints[idx]?.risk_level),
                 fillOpacity: 0.35,
                 weight: 1
               }}

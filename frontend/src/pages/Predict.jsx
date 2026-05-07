@@ -308,6 +308,7 @@ export default function Predict() {
                   center={[form.latitude || 20, form.longitude || 0]}
                   zoom={4}
                   scrollWheelZoom={false}
+                  whenReady={(event) => event.target.invalidateSize()}
                   className="h-full w-full"
                 >
                   <TileLayer
